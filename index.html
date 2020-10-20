@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="overskrift">
+                <h1> HCI og Brukervennelighet </h1>
+                <!-- Veldig midlertidig, er bare i plass for å få en ide av strukturen-->
+            </div>
+        </header>
+        <article>
+            <div id="knapper">
+                <a class="buttons" href="tema1.html">HTML og CSS </a>
+                <a class="buttons" href="tema2.html">Prosess i webutvikling </a>>
+                <a class="buttons" href="tema3.html">Behovsanalyse </a>
+                <a class="buttons" href="tema4.html">Informasjonsarkitektur </a>
+                <a class="buttons" href="tema5.html">Universell utforming </a>
+                <a class="buttons" href="UU.html">Oppgavetekst universell utforming </a>
+                <a class="buttons" href="video.html">Brukertest Video </a>
+
+            </div>
+            <br>
+            <br>
+
+            <div id="bilder">
+                <img class="Bilder" src="2.png" width="100%" height="100%" />
+
+                <img class="Bilder" src="3.png" width="100%" height="100%" />
+
+                <img class="Bilder" src="1.png" width="100%" height="100%" />
+            </div>
+            <script>
+                var slideIndex = 0;
+                window.onload = Slideshow();
+
+                function Slideshow() {
+                    var i;
+                    //Gjør bilde usynlig
+                    var x = document.getElementsByClassName("Bilder");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    //Gjør bilde synlig
+                    slideIndex++;
+                    if (slideIndex > x.length) {
+                        slideIndex = 1;
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                    setTimeout(Slideshow, 10000); //Bytter bilde hvert 5 sekund
+                }
+            </script>
+
+        </article>
+        <aside>
+
+        </aside>
+        <nav>
+
+        </nav>
+        <footer>
+        </footer>
+    </main>
+</body>
+
+</html>
