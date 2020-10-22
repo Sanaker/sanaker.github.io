@@ -225,3 +225,15 @@ a {
 h6 {
     font-size: 2px;
 }
+
+.video, iframe {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #777;
+}
+
+iframe {
+    display: block;
+    border-style:none;
+}
