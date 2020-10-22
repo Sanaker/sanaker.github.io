@@ -4,24 +4,7 @@ body {
     animation-name: farge;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    background: rgb(2, 0, 36);
-    background: radial-gradient(circle, rgba(172, 203, 238) 0%, rgba(201, 221, 245) 56%, rgba(231, 240, 253) 100%);
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background-color: #c6d0d6;
 }
 
 /*
@@ -65,23 +48,23 @@ body {
 main {
     display: grid;
     grid-template-areas: "topbar1 topbar2 topbar3" "ads content sidebar" "footer footer footer";
-    grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 5% 90% 5%;
-    row-gap: 10px;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 15% 70% 15%;
+    gap: 10px 10px;
 }
 
 header {
     grid-area: topbar2;
-    background-color: #ffffff98;
+    background-color: #1e869b2d;
 }
 
 .overskrift, h1 {
-    margin: 15px 40px 15px;
+    margin: 10px 10px 10px 10px;
 }
 
 article {
     grid-area: content;
-    background-color: #ffffff9d;
+    background-color: #b8b5f7;
 }
 
 aside {
@@ -96,37 +79,35 @@ footer {
     grid-area: footer;
 }
 
-/*
 .dropdown-knapp {
-    background-color: rgb(161, 204, 255);
+    background-color: rgb(129, 129, 129);
     color: black;
     padding: 16px;
     font-size: 16px;
-    border: solid #ffffff25;
+    border: solid #13525E;
     cursor: pointer;
-    position: fixed;
 }
 
 .dropdown-knapp:hover {
-    background-color: #ffffff;
-
+    background-color: #69979C;
+    /* Alle farger jeg legger til er midtlertidig*/
 }
 
 .dropdown {
     display: inline-block;
     position: absolute;
-    margin: 100px auto;
-    position: fixed;
+    margin: 100px 200px;
 }
 
 .dropdown-innhold {
     display: none;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.938);
+    background-color: rgb(177, 177, 177);
     min-width: 160px;
     box-shadow: 10px 10px 20px 0px;
-    position: fixed;
-    bottom: 48%;
+    z-index: 1;
+    left: 100%;
+    bottom: -316%;
 }
 
 .dropdown-innhold a {
@@ -137,13 +118,35 @@ footer {
 }
 
 .dropdown-innhold a:hover {
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(121, 121, 121);
 }
 
 .dropdown:hover .dropdown-innhold {
     display: block;
 }
-*/
+
+#pil {
+    font-size: 10vw;
+    color: black;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#pil:link {
+    text-decoration: none;
+}
+
+#pil:visited {
+    text-decoration: none;
+}
+
+#pil:hover {
+    text-decoration: none;
+}
+
+#pil:active {
+    text-decoration: none;
+}
 
 p {
     margin-left: 10px;
@@ -152,88 +155,4 @@ p {
 
 h6 {
     margin-left: 48%;
-}
-
-#knapper {
-    border: none;
-    color: white;
-    padding: 4px 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 5px 5px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#knapper2 {
-    border: none;
-    color: white;
-    padding: 4px 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 5px 5px;
-    cursor: pointer;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.buttons {
-    font-size: 26px;
-    padding: 20px 100px;
-    margin: 10px 10px;
-    border: solid black;
-    text-align: center;
-    width: 260px;
-    background-color: azure;
-}
-
-.buttons2 {
-    font-size: 14px;
-    padding: 8px 12px;
-    margin: 6px 6px;
-    border: solid black;
-    text-align: center;
-    width: 200px;
-    background-color: azure;
-}
-
-.buttons:hover {
-    box-shadow: 2px 2px 2px black;
-    background-color: rgb(213, 219, 219);
-}
-
-.buttons:active {
-    transform: translatey(3px);
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-#bilder {
-    border: solid black;
-}
-
-h6 {
-    font-size: 2px;
-}
-
-.video, iframe {
-    width: 1000px;
-    height: 500px;
-    margin: 0 auto;
-    background-color: #777;
-}
-
-iframe {
-    display: block;
-    border-style:none;
 }
