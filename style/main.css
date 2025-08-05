@@ -1,0 +1,61 @@
+/* Generell Styling for body */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Styling for headeren */
+header {
+    background: #f4f4f4;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+/* Styling for navigasjonsmenyen */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li {
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+/* Endrer farge på lenken når musepekeren er over */
+nav ul li a:hover {
+    color: #007bff;
+}
+
+main, footer {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+}
